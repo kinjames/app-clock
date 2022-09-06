@@ -11,12 +11,45 @@ body {
   font-family: "Inter", sans-serif;
   color: white;
   min-height: 100vh;
-  position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+}
+@media (max-width: 87.4375em) {
+  body {
+    width: 100%;
+  }
+}
+@media (max-width: 63.9375em) {
+  body {
+    width: 100%;
+  }
+}
+@media (max-width: 39.9375em) {
+  body {
+    width: 100%;
+  }
+}
+
+.day {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/bg-image-daytime.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .container {
   width: 71.25rem;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+@media (max-width: 39.9375em) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 63.9375em) {
+  .container {
+    width: 100%;
+  }
 }
 
 .flex {
@@ -31,6 +64,14 @@ body {
 .flex-ai-c {
   align-items: center;
 }
+.flex-col {
+  flex-direction: column;
+}
+@media (max-width: 39.9375em) {
+  .flex-row-jc {
+    justify-content: space-between;
+  }
+}
 
 @media (max-width: 63.9375em) {
   .hide-for-mobile {
@@ -41,5 +82,37 @@ body {
 @media (min-width: 64em) {
   .hide-for-desktop {
     display: none;
+  }
+}
+
+.quote-container {
+  gap: 4rem;
+  padding-top: 4rem;
+}
+.quote-container .quote-box {
+  width: 40%;
+  gap: 1rem;
+}
+.quote-container .quote-box .quote-text {
+  font-weight: 300;
+}
+.quote-container .quote-box .author-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.quote-container .fa-sync-alt {
+  display: inline-block;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: hsl(0deg, 0%, 19%);
+}
+.quote-container .fa-sync-alt:hover {
+  color: hsl(0deg, 0%, 100%);
+}
+@media (max-width: 39.9375em) {
+  .quote-container {
+    gap: 0;
+    padding-inline: 1.25rem;
   }
 }/*# sourceMappingURL=style.css.map */
