@@ -195,7 +195,7 @@ body {
 }
 @media (min-width: 40em) {
   .time-container .timeEl {
-    grid-template-columns: repeat(2, 24rem);
+    grid-template-columns: repeat(2, 32rem);
   }
 }
 .time-container .time-text {
