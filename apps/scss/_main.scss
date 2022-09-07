@@ -50,7 +50,7 @@
     @include breakpoint-down(small){
         gap: 0;
         padding-inline: 1.25rem;
-        padding-top: 2.5rem;
+        padding-top: 1.5rem;
     }
 }
 
@@ -140,7 +140,7 @@
 .footer {
    background:  rgba(255, 255, 255, 0.75);
    padding: 3.5rem 0 0 0;
-   animation-duration: .7s;
+   animation-duration: .5s;
 
    @include breakpoint-down(small){
     padding: 1.5rem 0 0 0;
