@@ -119,6 +119,10 @@ body {
   rotate: -90deg;
 }
 
+.lame {
+  color: hsl(0deg, 0%, 19%);
+}
+
 .quote-container {
   gap: 4rem;
   padding-top: 4rem;
@@ -254,7 +258,7 @@ body {
 }
 @media (max-width: 39.9375em) {
   .footer {
-    padding: 1.5rem 0;
+    padding: 1.5rem 0 0 0;
   }
 }
 
