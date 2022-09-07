@@ -12,39 +12,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./apps/scss/style.css">
 </head>
-<body class="day flex flex-col flex-jc-sb">
+<body class="body flex flex-col flex-jc-sb">
     <section class="quote-container container flex flex-row-jc">
         <div class="quote-box flex flex-col">
             <span class="quote-text" id="quote">
-                Six essential qualities that are the key to success: Sincerity, personal integrity, humility, courtesy, wisdom, charity.
+
             </span>
             <span class="author-text" id="author">
-                William C. Menninger
+
             </span>
         </div>
-        <i class="fas fa-sync-alt"></i>
+        <i class="fas fa-sync-alt" id="change"></i>
     </section>
     <section class="time-container container">
         <p class="greetings flex flex-ai-c">
             <i class="fas fa-sun"></i>
             <i class="fas fa-moon hide"></i>
             <span>
-                Good afternoon<span class="hide-for-mobile">, It's currently</span>
+                Good <span id="aft"></span><span class="hide-for-mobile">, It's currently</span>
             </span>
         </p>
 
         <div class="timeEl">
             <h2 class="time-text">
-                2:10
+
             </h2>
             <div class="period flex flex-col"> 
-                <p class="amPm">PM</p>
+                <p class="amPm"></p>
                 <p class="zone">GMT</p>
             </div>
         </div>
-        <div class="btn-container flex flex-jc-sb">
+        <div class="btn-container flex flex-jc-sb flex-col-mob">
             <h3>IN</h3>
-            <button class="cta flex flex-ai-c">More <span class="angle more flex flex-ai-c flex-jc-c"><i class="fas fa-angle-right"></i></span></button>
+            <button class="cta flex flex-ai-c flex-jc-sb">
+                More <span class="angle more flex flex-ai-c flex-jc-c"><i class="fas fa-angle-right"></i></span>
+            </button>
         </div>
     </section>
 
@@ -84,6 +86,8 @@
             </div>
         </div>
     </div>
+
+    <script src="./apps/js/script.js"></script>
 </body>
 </html>
 

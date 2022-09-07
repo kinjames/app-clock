@@ -10,6 +10,10 @@ body {
   height: 100vh;
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/bg-image-daytime.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   position: relative;
   color: white;
 }
@@ -31,6 +35,13 @@ body {
 
 .day {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/bg-image-daytime.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.night {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/bg-image-nighttime.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -79,6 +90,12 @@ body {
 @media (max-width: 39.9375em) {
   .flex-row-jc {
     justify-content: space-between;
+  }
+}
+@media (max-width: 39.9375em) {
+  .flex-col-mob {
+    flex-direction: column;
+    gap: 1.5rem;
   }
 }
 
@@ -195,6 +212,7 @@ body {
 }
 .time-container .period {
   grid-area: 2/2/3/3;
+  text-transform: uppercase;
 }
 @media (min-width: 40em) {
   .time-container .period {
@@ -211,12 +229,18 @@ body {
   padding: 1rem;
   background: hsl(0deg, 0%, 100%);
   outline: none;
-  border: 2px dashed hsl(0deg, 0%, 19%);
+  border: none;
   text-transform: uppercase;
   letter-spacing: 3px;
   border-radius: 2rem;
   cursor: pointer;
   font-size: 1rem;
+}
+@media (max-width: 39.9375em) {
+  .time-container .btn-container .cta {
+    padding: 0.5rem;
+    width: 7.5rem;
+  }
 }
 .time-container .btn-container .cta .angle {
   border-radius: 50%;
