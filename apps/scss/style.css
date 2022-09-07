@@ -172,6 +172,7 @@ body {
   .quote-container {
     gap: 0;
     padding-inline: 1.25rem;
+    padding-top: 2.5rem;
   }
 }
 

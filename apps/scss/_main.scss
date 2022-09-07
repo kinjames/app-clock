@@ -1,6 +1,8 @@
 .quote-container {
     gap: 4rem;
     padding-top: 4rem;
+
+
     .quote-box {
         width: 40%;
         gap: 1rem;
@@ -48,6 +50,7 @@
     @include breakpoint-down(small){
         gap: 0;
         padding-inline: 1.25rem;
+        padding-top: 2.5rem;
     }
 }
 
