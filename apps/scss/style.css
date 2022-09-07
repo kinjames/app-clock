@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 *, *::before, *::after {
-  box-sizing: border;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -9,10 +9,8 @@ body {
   width: 100%;
   height: 100vh;
   font-family: "Inter", sans-serif;
-  color: white;
-  min-height: 100vh;
-  position: relative;
   overflow-x: hidden;
+  color: white;
 }
 @media (max-width: 87.4375em) {
   body {
@@ -39,8 +37,9 @@ body {
 
 .container {
   width: 71.25rem;
+  padding-inline: 1.25rem;
+  padding-top: 6.25rem;
   margin: 0 auto;
-  overflow-x: hidden;
 }
 @media (max-width: 39.9375em) {
   .container {
@@ -86,6 +85,10 @@ body {
   }
 }
 
+.hide {
+  display: none;
+}
+
 .quote-container {
   gap: 4rem;
   padding-top: 4rem;
@@ -97,23 +100,104 @@ body {
 .quote-container .quote-box .quote-text {
   font-weight: 300;
 }
+@media (max-width: 39.9375em) {
+  .quote-container .quote-box .quote-text {
+    font-size: 0.75rem;
+  }
+}
 .quote-container .quote-box .author-text {
   font-size: 1.1rem;
   font-weight: 500;
 }
+@media (max-width: 39.9375em) {
+  .quote-container .quote-box .author-text {
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 39.9375em) {
+  .quote-container .quote-box {
+    width: 80%;
+  }
+}
 .quote-container .fa-sync-alt {
   display: inline-block;
-  font-size: 1.1rem;
+  font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  color: hsl(0deg, 0%, 19%);
+  color: gray;
 }
 .quote-container .fa-sync-alt:hover {
   color: hsl(0deg, 0%, 100%);
+}
+@media (max-width: 39.9375em) {
+  .quote-container .fa-sync-alt {
+    font-size: 0.875rem;
+  }
 }
 @media (max-width: 39.9375em) {
   .quote-container {
     gap: 0;
     padding-inline: 1.25rem;
   }
+}
+
+.time-container .greetings {
+  gap: 1rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+.time-container .timeEl {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+@media (min-width: 40em) {
+  .time-container .timeEl {
+    grid-template-columns: repeat(2, 24rem);
+  }
+}
+.time-container .time-text {
+  grid-area: 1/1/3/2;
+  font-size: 7rem;
+  font-weight: 700;
+}
+@media (min-width: 40em) {
+  .time-container .time-text {
+    font-size: 11rem;
+  }
+}
+.time-container .period {
+  grid-area: 2/2/3/3;
+}
+@media (min-width: 40em) {
+  .time-container .period {
+    font-size: 1.7rem;
+  }
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 200px;
+  grid-row-gap: 50px;
+}
+
+.div1 {
+  grid-area: 1/1/2/2;
+}
+
+.div2 {
+  grid-area: 1/2/2/3;
+}
+
+.div3 {
+  grid-area: 2/1/3/2;
+}
+
+.div4 {
+  grid-area: 2/2/3/3;
 }/*# sourceMappingURL=style.css.map */

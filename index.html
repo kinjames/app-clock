@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./apps/scss/style.css">
 </head>
-<body class="day">
-    <section class="quote-container container flex">
+<body class="day flex flex-col flex-jc-sb">
+    <section class="quote-container container flex flex-row-jc">
         <div class="quote-box flex flex-col">
             <span class="quote-text" id="quote">
                 Six essential qualities that are the key to success: Sincerity, personal integrity, humility, courtesy, wisdom, charity.
@@ -20,30 +20,43 @@
         </div>
         <i class="fas fa-sync-alt"></i>
     </section>
-    <section class="time-container">
-        <p class="greetings">
+    <section class="time-container container">
+        <p class="greetings flex flex-ai-c">
             <i class="fas fa-sun"></i>
+            <i class="fas fa-moon hide"></i>
             <span>
-                Good afternoon, It's currently
+                Good afternoon<span class="hide-for-mobile">, It's currently</span>
             </span>
         </p>
-        <p class="time-text">
-            <span class="hoursEl">2</span>
-            <span>:</span>
-            <span class="minuteEl">12</span>
-        </p>
-        <p class="period">
-            <span class="amPm">PM</span>
-            <span class="zone">GMT</span>
-        </p>
+        <!-- <div class="timeEl flex">
+            <h2 class="time-text">
+                2:10
+            </h2>
+            <div class="period flex flex-col">
+                <p class="amPm">PM</p>
+                <p class="zone">GMT</p>
+            </div>
+        </div> -->
+        <div class="timeEl">
+            <h2 class="time-text">
+                2:10
+            </h2>
+            <div class="period flex flex-col"> 
+                <p class="amPm">PM</p>
+                <p class="zone">GMT</p>
+            </div>
+        </div>
         <div class="btn-container">
             <p>IN</p>
             <button class="cta">More <span></span></button>
         </div>
     </section>
 
-    <section class="last-section">
-        
-    </section>
+    <div class="parent">
+        <div class="div1"> </div>
+        <div class="div2"> </div>
+        <div class="div3"> </div>
+        <div class="div4"> </div>
+        </div>
 </body>
 </html>

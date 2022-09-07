@@ -2,7 +2,7 @@
 
 
 *,*::before,*::after {
-    box-sizing: border;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -12,10 +12,8 @@ body {
     width: 100%;
     height: 100vh;
     font-family: "Inter", sans-serif;
-    color: white;
-    min-height: 100vh;
-    position: relative;
     overflow-x: hidden;
+    color: white;
 
     @include breakpoint-down(large){
         width: 100%;
@@ -37,8 +35,9 @@ body {
 
 .container {
     width: 71.25rem;
+    padding-inline: 1.25rem;
+    padding-top: 6.25rem;
     margin: 0 auto;
-    overflow-x: hidden;
 
     @include breakpoint-down(small){
         width: 100%;
@@ -86,5 +85,9 @@ body {
     @include breakpoint-up(large){
         display: none;
     }
+}
+
+.hide {
+    display: none;
 }
 
