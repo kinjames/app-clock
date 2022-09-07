@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/manage-landing-page-ByF2inAJqe)
-- Live Site URL: [Github](https://kinjames.github.io/manage-landing-page/)
+- Solution URL: [Frontend Mentor](https://github.com/kinjames/app-clock)
+- Live Site URL: [Github](https://kinjames.github.io/app-clock/)
 
 ## My process
 
