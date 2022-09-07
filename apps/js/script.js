@@ -45,6 +45,12 @@ const parentEl = document.querySelector('.parent');
 const timeContainer = document.querySelector('.time-container');
 const bodyEl = document.querySelector('.body');
 
+
+const region = document.getElementById('timezoneEl');
+const yearText = document.getElementById('yearText');
+const dayText = document.getElementById('dayText');
+const numText = document.getElementById('numText');
+
 const aft = document.getElementById('aft');
 
 
@@ -112,8 +118,28 @@ btn.addEventListener('click', ()=>{
         angle.classList.remove('less');
         lame.textContent = 'More'
     }
-})
+});
 
+//Details function
+
+async function fetchIp(){
+    let response = await fetch('https://worldtimeapi.org/api/ip')
+    let data = await response.json()
+    return data;
+}
+
+async function updateIp(){
+    const data = await fetchIp();
+
+    region.textContent = data.timezone;
+    yearText.textContent = data.day_of_year;
+    dayText.textContent = data.day_of_week;
+    numText.textContent = data.week_number;
+    zoneText.textContent = data.abbreviation;
+
+}
+
+updateIp();
 
 
 

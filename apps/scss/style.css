@@ -195,7 +195,7 @@ body {
 }
 .time-container .time-text {
   grid-area: 1/1/3/2;
-  font-size: 7rem;
+  font-size: 6rem;
   font-weight: 700;
 }
 @media (min-width: 40em) {
