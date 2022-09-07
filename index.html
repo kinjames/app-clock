@@ -28,15 +28,7 @@
                 Good afternoon<span class="hide-for-mobile">, It's currently</span>
             </span>
         </p>
-        <!-- <div class="timeEl flex">
-            <h2 class="time-text">
-                2:10
-            </h2>
-            <div class="period flex flex-col">
-                <p class="amPm">PM</p>
-                <p class="zone">GMT</p>
-            </div>
-        </div> -->
+
         <div class="timeEl">
             <h2 class="time-text">
                 2:10
@@ -46,17 +38,47 @@
                 <p class="zone">GMT</p>
             </div>
         </div>
-        <div class="btn-container">
-            <p>IN</p>
-            <button class="cta">More <span></span></button>
+        <div class="btn-container flex flex-jc-sb">
+            <h3>IN</h3>
+            <button class="cta flex flex-ai-c">More <span class="angle more flex flex-ai-c flex-jc-c"><i class="fas fa-angle-right"></i></span></button>
         </div>
     </section>
 
-    <div class="parent">
-        <div class="div1"> </div>
-        <div class="div2"> </div>
-        <div class="div3"> </div>
-        <div class="div4"> </div>
+    <div class="footer hide">
+        <div class="parent container">
+            <div class="div1 flex flex-col flex-row-jc-sb"> 
+                <p class="currentTime para" id="currentTime">
+                    current Timezone
+                </p>
+                <p class="timezoneEl para_1" id="timezoneEl">
+                    Africa/Accra
+                </p>
+            </div>
+            <div class="div2 flex flex-col flex-row-jc-sb"> 
+                <p class="yearEl para">
+                    Day of the year
+                </p>
+                <p class="yearElText para_1" id="yearText">
+                    250
+                </p>
+            </div>
+            <div class="div3 flex flex-col flex-row-jc-sb"> 
+                <p class="dayEl para" id="dayEl">
+                    day of the week
+                </p>
+                <p class="dayText para_1" id="dayText">
+                    3
+                </p>
+            </div>
+            <div class="div4 flex flex-col flex-row-jc-sb"> 
+                <p class="weekNum para">
+                    Week Number
+                </p>
+                <p class="numText para_1" id="numText">
+                    36
+                </p>
+            </div>
         </div>
+    </div>
 </body>
 </html>
