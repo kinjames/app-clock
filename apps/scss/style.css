@@ -254,8 +254,8 @@ body {
 .footer {
   background: rgba(255, 255, 255, 0.75);
   padding: 3.5rem 0 0 0;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
 }
 @media (max-width: 39.9375em) {
   .footer {
