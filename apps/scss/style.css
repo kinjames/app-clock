@@ -10,10 +10,6 @@ body {
   height: 100vh;
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/bg-image-daytime.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
   position: relative;
   color: white;
 }
@@ -123,10 +119,6 @@ body {
   rotate: -90deg;
 }
 
-.animate__fadeOutDown {
-  display: none;
-}
-
 .quote-container {
   gap: 4rem;
   padding-top: 4rem;
@@ -181,6 +173,7 @@ body {
 
 .time-container {
   padding-top: 2rem;
+  transition: all 0.5s ease-in-out;
 }
 .time-container .greetings {
   gap: 1rem;
@@ -256,8 +249,8 @@ body {
 .footer {
   background: rgba(255, 255, 255, 0.75);
   padding: 3.5rem 0 0 0;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
 }
 @media (max-width: 39.9375em) {
   .footer {
@@ -271,9 +264,9 @@ body {
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 12.5rem;
   grid-row-gap: 3.125rem;
+  color: hsl(0deg, 0%, 19%);
 }
 .parent .para {
-  color: hsl(0deg, 0%, 19%);
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -286,7 +279,6 @@ body {
 .parent .para_1 {
   padding-top: 1rem;
   font-size: 3.25rem;
-  color: hsl(0deg, 0%, 19%);
   font-weight: 700;
 }
 @media (max-width: 39.9375em) {

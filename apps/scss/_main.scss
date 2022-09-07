@@ -53,6 +53,7 @@
 
 .time-container{
     padding-top: 2rem;
+    transition: all .5s ease-in-out;
     .greetings {
         gap: 1rem;
         text-transform: uppercase;
@@ -136,7 +137,7 @@
 .footer {
    background:  rgba(255, 255, 255, 0.75);
    padding: 3.5rem 0 0 0;
-   animation-duration: 1.5s;
+   animation-duration: .5s;
 
    @include breakpoint-down(small){
     padding: 1.5rem 0;
@@ -151,9 +152,9 @@
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 12.5rem;
     grid-row-gap: 3.125rem;
+    color: $dark-gray;
 
     .para {
-        color: $dark-gray;
         font-weight: 300;
         text-transform: uppercase;
         letter-spacing: 2px;
@@ -166,7 +167,6 @@
     .para_1{
         padding-top: 1rem;
         font-size: 3.25rem;
-        color: $dark-gray;
         font-weight: 700;
 
         @include breakpoint-down(small){

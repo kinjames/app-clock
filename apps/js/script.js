@@ -30,15 +30,19 @@ async function update(){
 }
 
 
-//Time Api 
+//Time Functions
 const sun = document.querySelector('.fa-sun');
 const moon = document.querySelector('.fa-moon');
 const timeText = document.querySelector('.time-text');
 const ampmText = document.querySelector('.amPm');
 const zoneText = document.querySelector('.zone');
 const btn = document.querySelector('.cta');
+const angle = document.querySelector('.angle');
+const lame = document.querySelector('.lame');
 const quoteContainer = document.querySelector('.quote-container');
 const footerContainer = document.querySelector('.footer');
+const parentEl = document.querySelector('.parent');
+const timeContainer = document.querySelector('.time-container');
 const bodyEl = document.querySelector('.body');
 
 const aft = document.getElementById('aft');
@@ -64,14 +68,24 @@ function updateClock() {
         sun.classList.add('hide');
         ampmText.textContent = 'pm'
       }
+
+      if (hourNum >= 5 && hourNum <= 17 ) {
+        bodyEl.classList.remove('night');
+        bodyEl.classList.add('day');
+	} else {
+        bodyEl.classList.add('night');
+        bodyEl.classList.remove('day');
+		parentEl.style.color = '#fff';
+		footerContainer.style.background = 'rgba(0, 0, 0, 0.75)';
+	}
     
-    
+    if (minsNum < 10){
+        minsNum = "0" + minsNum
+    }
     
     if (hourNum > 12){
         hourNum = hourNum - 12;
-    } else if (minsNum < 10){
-        minsNum = "0" + minsNum
-    }
+    }  
     
     timeText.textContent = `${hourNum}:${minsNum}`;
 
@@ -81,6 +95,24 @@ function updateClock() {
 }
 
 updateClock();
+
+btn.addEventListener('click', ()=>{
+    if(footerContainer.classList.contains('hide')){
+        quoteContainer.classList.add('hide');
+        footerContainer.classList.remove('hide');
+        angle.classList.remove('more');
+        angle.classList.add('less');
+        lame.textContent = "less"
+        timeContainer.classList.add('animate__fadeInUp')
+    } else {
+        quoteContainer.classList.remove('hide');
+        footerContainer.classList.add('hide');
+        timeContainer.classList.remove('animate__fadeInUp');
+        angle.classList.add('more');
+        angle.classList.remove('less');
+        lame.textContent = 'More'
+    }
+})
 
 
 

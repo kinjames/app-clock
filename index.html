@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./apps/scss/style.css">
 </head>
-<body class="body flex flex-col flex-jc-sb">
+<body class="body day flex flex-col flex-jc-sb">
     <section class="quote-container container flex flex-row-jc">
         <div class="quote-box flex flex-col">
             <span class="quote-text" id="quote">
@@ -24,7 +24,7 @@
         </div>
         <i class="fas fa-sync-alt" id="change"></i>
     </section>
-    <section class="time-container container">
+    <section class="time-container container animate__animated">
         <p class="greetings flex flex-ai-c">
             <i class="fas fa-sun"></i>
             <i class="fas fa-moon hide"></i>
@@ -45,7 +45,8 @@
         <div class="btn-container flex flex-jc-sb flex-col-mob">
             <h3>IN</h3>
             <button class="cta flex flex-ai-c flex-jc-sb">
-                More <span class="angle more flex flex-ai-c flex-jc-c"><i class="fas fa-angle-right"></i></span>
+                <span class="lame">More</span>
+                 <span class="angle more flex flex-ai-c flex-jc-c"><i class="fas fa-angle-right"></i></span>
             </button>
         </div>
     </section>
@@ -53,18 +54,18 @@
     <div class="footer hide animate__animated  animate__fadeInUp">
         <div class="parent container">
             <div class="div1 flex flex-col flex-row-jc-sb"> 
-                <p class="currentTime para" id="currentTime">
+                <p class="currentTime para laslas" id="currentTime">
                     current Timezone
                 </p>
-                <p class="timezoneEl para_1" id="timezoneEl">
+                <p class="timezoneEl para_1 laslas" id="timezoneEl">
                     Africa/Accra
                 </p>
             </div>
             <div class="div2 flex flex-col flex-row-jc-sb"> 
-                <p class="yearEl para">
+                <p class="yearEl para laslas">
                     Day of the year
                 </p>
-                <p class="yearElText para_1" id="yearText">
+                <p class="yearElText para_1 laslas" id="yearText">
                     250
                 </p>
             </div>

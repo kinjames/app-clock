@@ -13,10 +13,6 @@ body {
     height: 100vh;
     font-family: "Inter", sans-serif;
     overflow-x: hidden;
-    background: linear-gradient(rgba(0,0,0,.3),rgb(0,0,0,.3)), url(../../images/bg-image-daytime.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
     position: relative;
     color: white;
 
@@ -128,7 +124,7 @@ body {
 }
 
 
-.animate__fadeOutDown {
-    display: none;
-}
+// .animate__fadeOutDown {
+//     display: none;
+// }
 
