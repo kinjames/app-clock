@@ -73,7 +73,7 @@
         grid-row-gap: 0px;
 
         @include breakpoint-up(medium){
-            grid-template-columns: repeat(2, 32rem);
+            grid-template-columns: repeat(2, 30rem);
         }
     }
         
